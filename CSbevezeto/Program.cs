@@ -28,6 +28,18 @@ namespace CSbevezeto
             {
                 Console.Write("Tippelj: ");
                 felhasznaloTippje = int.Parse(Console.ReadLine());
+                if (felhasznaloTippje < gondolt)
+                {
+                    Console.WriteLine("A gondolt szám nagyobb");
+                } 
+                else if (felhasznaloTippje > gondolt)
+                {
+                    Console.WriteLine("A gondolt szám kisebb");
+                } 
+                else
+                {
+                    Console.WriteLine("Erre a számra gondoltam");
+                }
             }
         }
 
