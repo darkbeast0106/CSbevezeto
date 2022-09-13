@@ -7,7 +7,22 @@ namespace CSbevezeto
         public static void Main(string[] args)
         {
             //Feladat1();
-            Feladat4();
+            //Feladat4();
+            Feladat13();
+        }
+
+        private static void Feladat13()
+        {
+            /*
+             * Készítsen játékprogramot, amely gondol egy számot 1 és 100 között.
+             * A felhasználó addig találgathat, amíg nem találja el a keresett 
+             * számot. A számítógép minden rossz tipp után írja ki, hogy a 
+             * gondolt szám nagyobb vagy kisebb.
+             */
+            Console.WriteLine("Gondoltam egy számra 1 és 100 között");
+            Random rnd = new Random();
+            //int gondolt = rnd.Next(100) + 1;
+            int gondolt = rnd.Next(1, 101);
         }
 
         private static void Feladat4()
