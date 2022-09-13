@@ -23,6 +23,12 @@ namespace CSbevezeto
             Random rnd = new Random();
             //int gondolt = rnd.Next(100) + 1;
             int gondolt = rnd.Next(1, 101);
+            int felhasznaloTippje = 0;
+            while (felhasznaloTippje != gondolt)
+            {
+                Console.Write("Tippelj: ");
+                felhasznaloTippje = int.Parse(Console.ReadLine());
+            }
         }
 
         private static void Feladat4()
